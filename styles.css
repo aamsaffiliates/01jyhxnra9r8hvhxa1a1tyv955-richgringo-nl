@@ -1,0 +1,692 @@
+/* Custom CSS for Rich Gringo Casino */
+
+/* Base Styles */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #0d1936 0%, #1a2847 100%);
+  position: relative;
+}
+
+/* Floating Elements */
+.floating-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-element {
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(198, 32, 71, 0.3);
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-card {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.floating-chip {
+  top: 20%;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+.floating-axe {
+  top: 60%;
+  left: 8%;
+  animation-delay: 2s;
+}
+
+.floating-helmet {
+  top: 70%;
+  right: 15%;
+  animation-delay: 3s;
+}
+
+.floating-beard {
+  top: 40%;
+  left: 90%;
+  animation-delay: 4s;
+}
+
+.floating-dice {
+  top: 80%;
+  left: 50%;
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/* Navigation */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: #c62047;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #c62047;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.cta-button {
+  background: #c62047;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #c62047;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button:hover {
+  background: transparent;
+  color: #c62047;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(198, 32, 71, 0.3);
+}
+
+.cta-button-large {
+  background: #c62047;
+  color: white;
+  padding: 1rem 2rem;
+  border: 3px solid #c62047;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta-button-large:hover {
+  background: transparent;
+  color: #c62047;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(198, 32, 71, 0.4);
+}
+
+.cta-button-secondary {
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border: 3px solid white;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta-button-secondary:hover {
+  background: white;
+  color: #0d1936;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.cta-button-small {
+  background: #c62047;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid #c62047;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button-small:hover {
+  background: transparent;
+  color: #c62047;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.parallax-bg {
+  background: linear-gradient(45deg, rgba(198, 32, 71, 0.1) 0%, rgba(13, 25, 54, 0.8) 100%);
+  animation: parallaxMove 20s ease-in-out infinite;
+}
+
+@keyframes parallaxMove {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.bonus-box {
+  background: linear-gradient(135deg, rgba(198, 32, 71, 0.2) 0%, rgba(255, 215, 0, 0.1) 100%);
+  border: 3px solid #c62047;
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.bonus-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  animation: spotlight 4s linear infinite;
+}
+
+@keyframes spotlight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(198, 32, 71, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(198, 32, 71, 0.6);
+  }
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 20px rgba(198, 32, 71, 0.3);
+  }
+  to {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 30px rgba(198, 32, 71, 0.6);
+  }
+}
+
+.hero-image {
+  animation: heroFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  background: #c62047;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Step Cards */
+.step-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  border-color: #c62047;
+  box-shadow: 0 15px 35px rgba(198, 32, 71, 0.3);
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  background: #c62047;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2rem;
+  color: white;
+  animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Game Cards */
+.game-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-color: #c62047;
+}
+
+.game-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.game-card:hover .game-overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  background: #c62047;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid #c62047;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.play-btn:hover {
+  background: transparent;
+  color: #c62047;
+  transform: scale(1.1);
+}
+
+/* Stat Cards */
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: #c62047;
+  box-shadow: 0 10px 25px rgba(198, 32, 71, 0.2);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #c62047;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: numberPulse 2s ease-in-out infinite;
+}
+
+@keyframes numberPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Provider Cards */
+.provider-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.provider-card:hover {
+  transform: translateY(-5px);
+  border-color: #c62047;
+  color: #c62047;
+  box-shadow: 0 10px 25px rgba(198, 32, 71, 0.2);
+}
+
+/* VIP Levels */
+.vip-level {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.vip-level:hover {
+  border-color: #c62047;
+  transform: translateX(10px);
+}
+
+/* Support Cards */
+.support-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-10px);
+  border-color: #c62047;
+  box-shadow: 0 15px 35px rgba(198, 32, 71, 0.3);
+}
+
+.support-icon {
+  width: 80px;
+  height: 80px;
+  background: #c62047;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2rem;
+  color: white;
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(198, 32, 71, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(198, 32, 71, 0.6);
+  }
+}
+
+/* Promo Cards */
+.promo-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-10px);
+  border-color: #c62047;
+  box-shadow: 0 15px 35px rgba(198, 32, 71, 0.3);
+}
+
+.promo-icon {
+  width: 60px;
+  height: 60px;
+  background: #c62047;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: #c62047;
+  box-shadow: 0 15px 35px rgba(198, 32, 71, 0.3);
+}
+
+/* Trust Badges */
+.trust-badge {
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.trust-badge:hover {
+  transform: translateY(-5px);
+}
+
+/* FAQ */
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #c62047;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: rgba(198, 32, 71, 0.1);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .floating-element {
+    font-size: 1.5rem;
+  }
+
+  .bonus-box {
+    padding: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-button-large {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .step-card,
+  .support-card,
+  .promo-card,
+  .feature-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Animation Delays for Staggered Effects */
+.step-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.step-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.step-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.step-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.game-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.game-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.game-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.game-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.game-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.game-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+/* Entrance Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-card,
+.game-card,
+.stat-card,
+.provider-card,
+.support-card,
+.promo-card,
+.feature-card {
+  animation: slideInUp 0.6s ease-out forwards;
+}

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inloggen & Registreren - Rich Gringo Casino | Volledige Gids</title>
+    <meta name="description" content="Volledige gids voor inloggen en registreren bij Rich Gringo Casino. Leer hoe je je account aanmaakt, welkomstbonus claimt en veilig inlogt op desktop en mobiel.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Inloggen & Registreren - Rich Gringo Casino Gids">
+    <meta property="og:description" content="Volledige gids voor inloggen en registreren bij Rich Gringo Casino. Account aanmaken, welkomstbonus claimen en veilig inloggen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://richgringo.nl/login">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rich-bg': '#0D1936',
+                        'rich-cta': '#c62047',
+                        'rich-text': '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rich-bg text-rich-text overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element floating-card"><i class="fas fa-spade-suit"></i></div>
+        <div class="floating-element floating-chip"><i class="fas fa-coins"></i></div>
+        <div class="floating-element floating-axe"><i class="fas fa-axe-battle"></i></div>
+        <div class="floating-element floating-helmet"><i class="fas fa-helmet-battle"></i></div>
+        <div class="floating-element floating-beard"><i class="fas fa-user-beard"></i></div>
+        <div class="floating-element floating-dice"><i class="fas fa-dice"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-rich-bg/90 backdrop-blur-md z-50 border-b border-gray-700">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.png" alt="Richgringo logo" class="h-32 -my-12" />
+                    </a>
+                <div class="hidden md:flex space-x-2">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">Over Casino</a>
+                    <a href="/#games" class="nav-link">Spellen</a>
+                    <a href="/#bonuses" class="nav-link">Bonussen</a>
+                    <a href="about.html" class="nav-link">Over Ons</a>
+                    <a href="/#support" class="nav-link">Support</a>
+                </div>
+                <button onclick="redirectToRegister()" class="cta-button">
+                    Registreer Nu
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="pt-24 pb-8 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm text-gray-400">
+                <a href="/" class="hover:text-white">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-white">Inloggen & Registreren</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="py-16 bg-gray-900/30">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="hero-title mb-6">Inloggen & Registreren Gids</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Volledige instructies voor het aanmaken van je Rich Gringo Casino account, 
+                het claimen van je welkomstbonus en veilig inloggen op alle apparaten.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Login Section -->
+    <section class="py-12 bg-rich-cta/10 border-y border-rich-cta/30">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-6">
+                            <h3 class="text-2xl font-bold mb-4 text-rich-cta">Bestaande Speler?</h3>
+                            <p class="text-gray-300 mb-6">Log direct in op je account</p>
+                            <button onclick="redirectToRegister()" class="cta-button-large w-full">
+                                <i class="fas fa-sign-in-alt mr-2"></i>
+                                Inloggen
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-6">
+                            <h3 class="text-2xl font-bold mb-4 text-rich-cta">Nieuwe Speler?</h3>
+                            <p class="text-gray-300 mb-6">Maak een account aan en claim je bonus</p>
+                            <button onclick="redirectToRegister()" class="cta-button-large w-full">
+                                <i class="fas fa-user-plus mr-2"></i>
+                                Registreren
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Guide -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Hoe Registreer Je Bij Rich Gringo Casino?</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Stap-voor-Stap Registratie</h3>
+                        <div class="space-y-6">
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">1</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Ga naar de Registratiepagina</h4>
+                                        <p class="text-gray-300">Klik op "Registreer Nu" op de homepage of ga direct naar richgringo.nl/register</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">2</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Vul je Persoonlijke Gegevens In</h4>
+                                        <ul class="text-gray-300 text-sm space-y-1">
+                                            <li>• Voor- en achternaam</li>
+                                            <li>• E-mailadres (dit wordt je gebruikersnaam)</li>
+                                            <li>• Geboortedatum (18+ vereist)</li>
+                                            <li>• Telefoonnummer</li>
+                                            <li>• Adresgegevens</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">3</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Kies een Sterk Wachtwoord</h4>
+                                        <ul class="text-gray-300 text-sm space-y-1">
+                                            <li>• Minimaal 8 karakters</li>
+                                            <li>• Combinatie van letters, cijfers en symbolen</li>
+                                            <li>• Geen persoonlijke informatie gebruiken</li>
+                                            <li>• Uniek wachtwoord alleen voor dit casino</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">4</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Accepteer Voorwaarden</h4>
+                                        <p class="text-gray-300">Lees en accepteer de algemene voorwaarden en privacybeleid</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">5</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Bevestig je Account</h4>
+                                        <p class="text-gray-300">Controleer je e-mail en klik op de bevestigingslink</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Welkomstbonus Claimen</h3>
+                        <div class="bg-gradient-to-br from-rich-cta/20 to-yellow-500/20 border border-rich-cta rounded-lg p-6 mb-6">
+                            <div class="text-center mb-4">
+                                <div class="text-3xl font-bold text-rich-cta">150% tot €1.400</div>
+                                <div class="text-xl text-yellow-400">+ 100 Free Spins</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4">
+                                <h4 class="font-bold mb-2">Na Registratie:</h4>
+                                <ol class="text-gray-300 text-sm space-y-2">
+                                    <li>1. Log in op je nieuwe account</li>
+                                    <li>2. Ga naar de kassier sectie</li>
+                                    <li>3. Doe je eerste storting (min. €20)</li>
+                                    <li>4. Bonus wordt automatisch toegevoegd</li>
+                                    <li>5. Free spins worden over 10 dagen verdeeld</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
+                                <h4 class="font-bold mb-2 text-yellow-400">
+                                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                                    Belangrijk:
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Bonus heeft 35x inzetvereisten</li>
+                                    <li>• 30 dagen om in te zetten</li>
+                                    <li>• Max. €5 per spin tijdens bonus</li>
+                                    <li>• Lees volledige bonusvoorwaarden</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Instructions -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Inloggen op Rich Gringo Casino</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Desktop Inloggen</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                                <h4 class="font-bold mb-3">Normale Inlogprocedure:</h4>
+                                <ol class="text-gray-300 space-y-2">
+                                    <li>1. Ga naar richgringo.nl</li>
+                                    <li>2. Klik op "Inloggen" rechtsboven</li>
+                                    <li>3. Voer je e-mailadres in</li>
+                                    <li>4. Voer je wachtwoord in</li>
+                                    <li>5. Klik op "Inloggen"</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                                <h4 class="font-bold mb-3">Tips voor Veilig Inloggen:</h4>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• Controleer altijd de URL (richgringo.nl)</li>
+                                    <li>• Gebruik nooit openbare WiFi voor inloggen</li>
+                                    <li>• Log altijd uit na het spelen</li>
+                                    <li>• Gebruik "Onthoud mij" alleen op eigen apparaten</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Mobiel Inloggen</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                                <h4 class="font-bold mb-3">Mobiele Website:</h4>
+                                <ol class="text-gray-300 space-y-2">
+                                    <li>1. Open je mobiele browser</li>
+                                    <li>2. Ga naar richgringo.nl</li>
+                                    <li>3. Tik op het menu-icoon (☰)</li>
+                                    <li>4. Selecteer "Inloggen"</li>
+                                    <li>5. Gebruik dezelfde inloggegevens als desktop</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-blue-400">
+                                    <i class="fas fa-mobile-alt mr-2"></i>
+                                    Mobiele App Info:
+                                </h4>
+                                <p class="text-gray-300 mb-3">
+                                    Rich Gringo Casino heeft geen aparte mobiele app. Je gebruikt dezelfde inloggegevens 
+                                    (e-mail en wachtwoord) op de mobiele website als op desktop.
+                                </p>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Alle functies beschikbaar via browser</li>
+                                    <li>• Geen app download nodig</li>
+                                    <li>• Werkt op alle smartphones en tablets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Problems & Recovery -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Inlogproblemen Oplossen</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Veelvoorkomende Problemen</h3>
+                        <div class="space-y-6">
+                            <div class="problem-card">
+                                <h4 class="font-bold text-lg mb-2 text-yellow-400">
+                                    <i class="fas fa-exclamation-circle mr-2"></i>
+                                    Wachtwoord Vergeten
+                                </h4>
+                                <div class="text-gray-300 space-y-2">
+                                    <p><strong>Oplossing:</strong></p>
+                                    <ol class="ml-4 space-y-1">
+                                        <li>1. Klik op "Wachtwoord Vergeten?" op de inlogpagina</li>
+                                        <li>2. Voer je e-mailadres in</li>
+                                        <li>3. Controleer je e-mail (ook spam folder)</li>
+                                        <li>4. Klik op de reset link</li>
+                                        <li>5. Kies een nieuw sterk wachtwoord</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="problem-card">
+                                <h4 class="font-bold text-lg mb-2 text-yellow-400">
+                                    <i class="fas fa-lock mr-2"></i>
+                                    Account Vergrendeld
+                                </h4>
+                                <div class="text-gray-300 space-y-2">
+                                    <p><strong>Oorzaken:</strong></p>
+                                    <ul class="ml-4 space-y-1">
+                                        <li>• 5+ onjuiste inlogpogingen</li>
+                                        <li>• Verdachte activiteit gedetecteerd</li>
+                                        <li>• Veiligheidsmaatregelen</li>
+                                    </ul>
+                                    <p><strong>Oplossing:</strong> Neem contact op met klantenservice</p>
+                                </div>
+                            </div>
+
+                            <div class="problem-card">
+                                <h4 class="font-bold text-lg mb-2 text-yellow-400">
+                                    <i class="fas fa-envelope mr-2"></i>
+                                    E-mail Niet Ontvangen
+                                </h4>
+                                <div class="text-gray-300 space-y-2">
+                                    <p><strong>Controleer:</strong></p>
+                                    <ul class="ml-4 space-y-1">
+                                        <li>• Spam/junk mail folder</li>
+                                        <li>• Juiste e-mailadres gebruikt</li>
+                                        <li>• E-mail filters</li>
+                                        <li>• Wacht 10-15 minuten</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Account Herstellen</h3>
+                        <div class="space-y-6">
+                            <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                                <h4 class="font-bold mb-3">Stappen voor Account Herstel:</h4>
+                                <ol class="text-gray-300 space-y-2">
+                                    <li>1. <strong>Probeer wachtwoord reset</strong> - Gebruik "Wachtwoord Vergeten"</li>
+                                    <li>2. <strong>Controleer e-mail</strong> - Inclusief spam folder</li>
+                                    <li>3. <strong>Wacht 24 uur</strong> - Voor automatische ontgrendeling</li>
+                                    <li>4. <strong>Contact klantenservice</strong> - Als bovenstaande niet werkt</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-rich-cta/10 border border-rich-cta/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-rich-cta">
+                                    <i class="fas fa-headset mr-2"></i>
+                                    Hulp Nodig?
+                                </h4>
+                                <p class="text-gray-300 mb-4">
+                                    Onze klantenservice staat 24/7 klaar om je te helpen met inlogproblemen.
+                                </p>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-comments text-rich-cta mr-3"></i>
+                                        <span>Live Chat: 24/7 beschikbaar</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-envelope text-rich-cta mr-3"></i>
+                                        <span>E-mail: support@richgringo.com</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-phone text-rich-cta mr-3"></i>
+                                        <span>Telefoon: +31 20 123 4567</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-yellow-400">
+                                    <i class="fas fa-info-circle mr-2"></i>
+                                    Benodigde Informatie:
+                                </h4>
+                                <p class="text-gray-300 mb-2">Houd deze gegevens bij de hand:</p>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Geregistreerd e-mailadres</li>
+                                    <li>• Voor- en achternaam</li>
+                                    <li>• Geboortedatum</li>
+                                    <li>• Laatste storting (indien van toepassing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Measures -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Veiligheidsmaatregelen</h2>
+                
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Account Beveiliging</h3>
+                        <ul class="text-gray-300 space-y-2 text-sm">
+                            <li>• Gebruik unieke, sterke wachtwoorden</li>
+                            <li>• Deel nooit je inloggegevens</li>
+                            <li>• Log altijd uit na het spelen</li>
+                            <li>• Controleer regelmatig je account activiteit</li>
+                            <li>• Meld verdachte activiteit direct</li>
+                        </ul>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Apparaat Veiligheid</h3>
+                        <ul class="text-gray-300 space-y-2 text-sm">
+                            <li>• Log nooit in op openbare computers</li>
+                            <li>• Gebruik geen openbare WiFi</li>
+                            <li>• Houd je apparaten up-to-date</li>
+                            <li>• Gebruik antivirus software</li>
+                            <li>• Sluit browser volledig af na spelen</li>
+                        </ul>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Geld Bescherming</h3>
+                        <ul class="text-gray-300 space-y-2 text-sm">
+                            <li>• Stel stortingslimieten in</li>
+                            <li>• Controleer transacties regelmatig</li>
+                            <li>• Gebruik alleen eigen betaalmethoden</li>
+                            <li>• Bewaar bewijzen van transacties</li>
+                            <li>• Meld onbekende transacties direct</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Important Security Warning -->
+                <div class="mt-12 bg-red-500/10 border-2 border-red-500/30 rounded-lg p-8">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-exclamation-triangle text-4xl text-red-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-red-400">BELANGRIJKE VEILIGHEIDSWAARSCHUWING</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 text-red-400">NOOIT DOEN:</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>❌ Ingelogd blijven op apparaten van anderen</li>
+                                <li>❌ Je wachtwoord delen met anderen</li>
+                                <li>❌ Inloggen via verdachte links</li>
+                                <li>❌ Account gegevens opslaan op openbare computers</li>
+                                <li>❌ Automatisch inloggen op gedeelde apparaten</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 text-green-400">ALTIJD DOEN:</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>✅ Uitloggen na elke sessie</li>
+                                <li>✅ Wachtwoord regelmatig wijzigen</li>
+                                <li>✅ Alleen inloggen via richgringo.nl</li>
+                                <li>✅ Browser geschiedenis wissen op gedeelde apparaten</li>
+                                <li>✅ Verdachte activiteit direct melden</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
+                        <p class="text-center text-yellow-400 font-semibold">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Als je vermoedt dat je account gecompromitteerd is, neem dan ONMIDDELLIJK contact op met onze klantenservice!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Tips -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="section-title text-center mb-16">Extra Tips & Informatie</h2>
+                
+                <div class="space-y-8">
+                    <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4 text-rich-cta">
+                            <i class="fas fa-clock mr-2"></i>
+                            Sessie Management
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Automatische Uitlog:</h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Na 30 minuten inactiviteit</li>
+                                    <li>• Bij sluiten van browser</li>
+                                    <li>• Bij detectie van verdachte activiteit</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Sessie Verlengen:</h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Klik op "Sessie Verlengen" popup</li>
+                                    <li>• Blijf actief tijdens het spelen</li>
+                                    <li>• Log opnieuw in indien nodig</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4 text-rich-cta">
+                            <i class="fas fa-user-check mr-2"></i>
+                            Account Verificatie
+                        </h3>
+                        <p class="text-gray-300 mb-4">
+                            Voor je eerste opname moet je account geverifieerd worden (KYC - Know Your Customer):
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Benodigde Documenten:</h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Geldig identiteitsbewijs (ID/paspoort)</li>
+                                    <li>• Bewijs van adres (max. 3 maanden oud)</li>
+                                    <li>• Bewijs van betaalmethode</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Verificatieproces:</h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Upload documenten in je account</li>
+                                    <li>• Wacht op goedkeuring (1-3 dagen)</li>
+                                    <li>• Ontvang bevestiging per e-mail</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400">
+                            <i class="fas fa-question-circle mr-2"></i>
+                            Nog Vragen?
+                        </h3>
+                        <p class="text-gray-300 mb-4">
+                            Onze klantenservice helpt je graag met alle vragen over registratie, inloggen en account beheer.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button onclick="redirectToRegister()" class="cta-button">
+                                <i class="fas fa-comments mr-2"></i>
+                                Start Live Chat
+                            </button>
+                            <a href="about.html" class="cta-button-secondary">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                Meer Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-rich-cta/10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6">Klaar om te Beginnen?</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Registreer je nu bij Rich Gringo Casino en ontvang je welkomstbonus van 150% tot €1.400 + 100 gratis spins!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="redirectToRegister()" class="cta-button-large">
+                        <i class="fas fa-user-plus mr-2"></i>
+                        Registreer Nu
+                    </button>
+                    <button onclick="redirectToRegister()" class="cta-button-secondary">
+                        <i class="fas fa-sign-in-alt mr-2"></i>
+                        Inloggen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="/">
+                        <img src="images/logo.png" class="-ml-8 h-24" alt="Rich gringo logo" />
+                        </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Het ultieme online casino voor Nederlandse Viking krijgers. Speel verantwoord en win groot!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Spellen</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/#games" class="hover:text-white">Slots</a></li>
+                        <li><a href="/#games" class="hover:text-white">Live Casino</a></li>
+                        <li><a href="/#games" class="hover:text-white">Tafelspellen</a></li>
+                        <li><a href="/#games" class="hover:text-white">Jackpots</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/#support" class="hover:text-white">Live Chat</a></li>
+                        <li><a href="/#support" class="hover:text-white">Email</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                        <li><a href="/login" class="hover:text-white text-rich-cta">Inloggen</a></li>
+                        <li><a href="/payments" class="hover:text-white text-rich-cta">Betalingen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Verantwoord Gokken</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            <a href="#" class="hover:text-white">Speel Verantwoord</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white">Zelfuitsluiting</a></li>
+                        <li><a href="#" class="hover:text-white">Limieten Instellen</a></li>
+                        <li><a href="#" class="hover:text-white">Hulp bij Gokverslaving</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p class="mb-2">
+                    Rich Gringo wordt geëxploiteerd door EOD Code SRL, een naar behoren geregistreerd bedrijf in overeenstemming met de wetten van de Republiek Costa Rica met Corporate Id. Nr. 3-101-910497
+                </p>
+                <p class="text-yellow-400 font-semibold">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    Gokken kan verslavend zijn. Speel verantwoord. 18+
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

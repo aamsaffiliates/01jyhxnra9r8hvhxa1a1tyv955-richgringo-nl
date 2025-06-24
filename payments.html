@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betalingen & Opnames - Rich Gringo Casino | Volledige Gids</title>
+    <meta name="description" content="Volledige gids voor stortingen en opnames bij Rich Gringo Casino. Leer over betalingsmethoden, inzetvereisten, KYC verificatie en anti-witwasbeleid.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Betalingen & Opnames - Rich Gringo Casino Gids">
+    <meta property="og:description" content="Volledige gids voor stortingen en opnames bij Rich Gringo Casino. Betalingsmethoden, verificatie en veiligheidsmaatregelen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://richgringo.nl/payments">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rich-bg': '#0D1936',
+                        'rich-cta': '#c62047',
+                        'rich-text': '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rich-bg text-rich-text overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element floating-card"><i class="fas fa-spade-suit"></i></div>
+        <div class="floating-element floating-chip"><i class="fas fa-coins"></i></div>
+        <div class="floating-element floating-axe"><i class="fas fa-axe-battle"></i></div>
+        <div class="floating-element floating-helmet"><i class="fas fa-helmet-battle"></i></div>
+        <div class="floating-element floating-beard"><i class="fas fa-user-beard"></i></div>
+        <div class="floating-element floating-dice"><i class="fas fa-dice"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-rich-bg/90 backdrop-blur-md z-50 border-b border-gray-700">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.png" alt="Richgringo logo" class="h-32 -my-12" />
+                    </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">Over Casino</a>
+                    <a href="/#games" class="nav-link">Spellen</a>
+                    <a href="/#bonuses" class="nav-link">Bonussen</a>
+                    <a href="/#support" class="nav-link">Support</a>
+                </div>
+                <button onclick="redirectToRegister()" class="cta-button">
+                    Registreer Nu
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="pt-24 pb-8 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm text-gray-400">
+                <a href="/" class="hover:text-white">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-white">Betalingen & Opnames</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="py-16 bg-gray-900/30">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="hero-title mb-6">Betalingen & Opnames</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Volledige gids voor veilige stortingen en snelle opnames bij Rich Gringo Casino. 
+                Leer alles over betalingsmethoden, verificatie en inzetvereisten.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Payment Overview -->
+    <section class="py-12 bg-rich-cta/10 border-y border-rich-cta/30">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4">
+                            <i class="fas fa-credit-card text-3xl text-rich-cta mb-2"></i>
+                            <h3 class="font-bold mb-1">Minimale Storting</h3>
+                            <p class="text-2xl font-bold text-green-400">€10</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4">
+                            <i class="fas fa-clock text-3xl text-rich-cta mb-2"></i>
+                            <h3 class="font-bold mb-1">Storttijd</h3>
+                            <p class="text-2xl font-bold text-green-400">Direct</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4">
+                            <i class="fas fa-money-bill-wave text-3xl text-rich-cta mb-2"></i>
+                            <h3 class="font-bold mb-1">Minimale Opname</h3>
+                            <p class="text-2xl font-bold text-yellow-400">€20</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4">
+                            <i class="fas fa-hourglass-half text-3xl text-rich-cta mb-2"></i>
+                            <h3 class="font-bold mb-1">Opnametijd</h3>
+                            <p class="text-2xl font-bold text-yellow-400">6u-3d</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deposit Methods -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Stortingsmethoden</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Hoe Geld Storten?</h3>
+                        <div class="space-y-6">
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">1</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Log In op Je Account</h4>
+                                        <p class="text-gray-300">Ga naar richgringo.nl en log in met je gebruikersnaam en wachtwoord</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">2</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Ga naar de Kassier</h4>
+                                        <p class="text-gray-300">Klik op "Kassier" of "Storting" in je account dashboard</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">3</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Kies Betaalmethode</h4>
+                                        <p class="text-gray-300">Selecteer je gewenste betaalmethode uit de beschikbare opties</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">4</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Voer Bedrag In</h4>
+                                        <p class="text-gray-300">Kies het bedrag dat je wilt storten (minimaal €10)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">5</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Bevestig Transactie</h4>
+                                        <p class="text-gray-300">Volg de instructies van je bank of betaalprovider</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Beschikbare Methoden</h3>
+                        <div class="space-y-4">
+                            <div class="payment-method-card">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-university text-2xl text-blue-400 mr-4"></i>
+                                        <div>
+                                            <h4 class="font-bold">iDEAL</h4>
+                                            <p class="text-sm text-gray-400">Nederlandse banken</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-green-400 font-semibold">Direct</div>
+                                        <div class="text-sm text-gray-400">€10 - €5.000</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-method-card">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-credit-card text-2xl text-yellow-400 mr-4"></i>
+                                        <div>
+                                            <h4 class="font-bold">Bancontact</h4>
+                                            <p class="text-sm text-gray-400">Belgische banken</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-green-400 font-semibold">Direct</div>
+                                        <div class="text-sm text-gray-400">€10 - €2.500</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-method-card">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-bolt text-2xl text-orange-400 mr-4"></i>
+                                        <div>
+                                            <h4 class="font-bold">SOFORT</h4>
+                                            <p class="text-sm text-gray-400">Directe bankoverschrijving</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-green-400 font-semibold">Direct</div>
+                                        <div class="text-sm text-gray-400">€10 - €3.000</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-method-card">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-shield-alt text-2xl text-green-400 mr-4"></i>
+                                        <div>
+                                            <h4 class="font-bold">Paysafecard</h4>
+                                            <p class="text-sm text-gray-400">Prepaid voucher</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-green-400 font-semibold">Direct</div>
+                                        <div class="text-sm text-gray-400">€10 - €1.000</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-method-card">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-credit-card text-2xl text-purple-400 mr-4"></i>
+                                        <div>
+                                            <h4 class="font-bold">Visa/Mastercard</h4>
+                                            <p class="text-sm text-gray-400">Creditcards</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-green-400 font-semibold">Direct</div>
+                                        <div class="text-sm text-gray-400">€20 - €5.000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deposit Limits Table -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-rich-cta">Stortingslimieten & Kosten</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border border-gray-700 bg-gray-900/50 rounded-lg">
+                            <thead class="bg-gray-800">
+                                <tr>
+                                    <th class="px-6 py-4 text-left">Betaalmethode</th>
+                                    <th class="px-6 py-4 text-left">Min. Storting</th>
+                                    <th class="px-6 py-4 text-left">Max. Storting</th>
+                                    <th class="px-6 py-4 text-left">Verwerkingstijd</th>
+                                    <th class="px-6 py-4 text-left">Kosten</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-700">
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">iDEAL</td>
+                                    <td class="px-6 py-4">€10</td>
+                                    <td class="px-6 py-4">€5.000</td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Direct</span></td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Gratis</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">Bancontact</td>
+                                    <td class="px-6 py-4">€10</td>
+                                    <td class="px-6 py-4">€2.500</td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Direct</span></td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Gratis</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">SOFORT</td>
+                                    <td class="px-6 py-4">€10</td>
+                                    <td class="px-6 py-4">€3.000</td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Direct</span></td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Gratis</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">Paysafecard</td>
+                                    <td class="px-6 py-4">€10</td>
+                                    <td class="px-6 py-4">€1.000</td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Direct</span></td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Gratis</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">Visa/Mastercard</td>
+                                    <td class="px-6 py-4">€20</td>
+                                    <td class="px-6 py-4">€5.000</td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Direct</span></td>
+                                    <td class="px-6 py-4"><span class="text-yellow-400">2.5%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Withdrawal Methods -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Opnamemethoden</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Hoe Geld Opnemen?</h3>
+                        <div class="space-y-6">
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">1</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Account Verificatie</h4>
+                                        <p class="text-gray-300">Zorg dat je account volledig geverifieerd is (KYC proces)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">2</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Inzetvereisten Voldaan</h4>
+                                        <p class="text-gray-300">Controleer dat alle bonus inzetvereisten zijn voltooid</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">3</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Ga naar Opnames</h4>
+                                        <p class="text-gray-300">Klik op "Opname" in je account kassier sectie</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">4</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Kies Methode & Bedrag</h4>
+                                        <p class="text-gray-300">Selecteer opnamemethode en voer het gewenste bedrag in</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="flex items-start">
+                                    <div class="step-number">5</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Bevestig Aanvraag</h4>
+                                        <p class="text-gray-300">Controleer details en bevestig je opname aanvraag</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Opname Voorwaarden</h3>
+                        <div class="space-y-4">
+                            <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-yellow-400">
+                                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                                    Belangrijke Voorwaarden:
+                                </h4>
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li>• Account moet volledig geverifieerd zijn</li>
+                                    <li>• Minimale opname: €20</li>
+                                    <li>• Maximale opname: €5.000 per dag</li>
+                                    <li>• Opname naar dezelfde methode als storting</li>
+                                    <li>• Alle bonussen moeten zijn ingezet</li>
+                                    <li>• 1x playthrough van stortingen vereist</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-red-400">
+                                    <i class="fas fa-ban mr-2"></i>
+                                    Anti-Witwas Beleid:
+                                </h4>
+                                <p class="text-gray-300 text-sm mb-3">
+                                    Rich Gringo Casino houdt zich strikt aan anti-witwasregels. 
+                                    Alle stortingen moeten minimaal 1x worden ingezet voordat opname mogelijk is.
+                                </p>
+                                <ul class="text-gray-300 space-y-1 text-sm">
+                                    <li>• Minimaal 1x playthrough van alle stortingen</li>
+                                    <li>• Verdachte transacties worden onderzocht</li>
+                                    <li>• Aanvullende verificatie kan worden gevraagd</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Withdrawal Limits Table -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-rich-cta">Opnamelimieten & Verwerkingstijden</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border border-gray-700 bg-gray-900/50 rounded-lg">
+                            <thead class="bg-gray-800">
+                                <tr>
+                                    <th class="px-6 py-4 text-left">Opnamemethode</th>
+                                    <th class="px-6 py-4 text-left">Min. Opname</th>
+                                    <th class="px-6 py-4 text-left">Max. per Dag</th>
+                                    <th class="px-6 py-4 text-left">Max. per Week</th>
+                                    <th class="px-6 py-4 text-left">Verwerkingstijd</th>
+                                    <th class="px-6 py-4 text-left">Kosten</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-700">
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">Bankoverschrijving</td>
+                                    <td class="px-6 py-4">€20</td>
+                                    <td class="px-6 py-4">€5.000</td>
+                                    <td class="px-6 py-4">€20.000</td>
+                                    <td class="px-6 py-4"><span class="text-yellow-400">1-3 dagen</span></td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Gratis</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">E-wallets</td>
+                                    <td class="px-6 py-4">€20</td>
+                                    <td class="px-6 py-4">€3.000</td>
+                                    <td class="px-6 py-4">€15.000</td>
+                                    <td class="px-6 py-4"><span class="text-green-400">6-24 uur</span></td>
+                                    <td class="px-6 py-4"><span class="text-green-400">Gratis</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold">Creditcard</td>
+                                    <td class="px-6 py-4">€20</td>
+                                    <td class="px-6 py-4">€2.000</td>
+                                    <td class="px-6 py-4">€10.000</td>
+                                    <td class="px-6 py-4"><span class="text-yellow-400">3-5 dagen</span></td>
+                                    <td class="px-6 py-4"><span class="text-yellow-400">2%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wagering Requirements -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Inzetvereisten</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Wat Zijn Inzetvereisten?</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <p class="text-lg leading-relaxed mb-6">
+                                Inzetvereisten (wagering requirements) bepalen hoeveel je moet inzetten voordat je bonuswinsten kunt opnemen. 
+                                Dit is een standaard veiligheidsmaatregel in de online casino industrie om misbruik van bonussen te voorkomen.
+                            </p>
+                            
+                            <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-6 mb-6">
+                                <h4 class="font-bold mb-3 text-blue-400">
+                                    <i class="fas fa-calculator mr-2"></i>
+                                    Voorbeeld Berekening:
+                                </h4>
+                                <div class="space-y-2 text-sm">
+                                    <p>Welkomstbonus: €100 (35x inzetvereisten)</p>
+                                    <p>Totaal in te zetten: €100 × 35 = €3.500</p>
+                                    <p>Na het inzetten van €3.500 kun je winsten opnemen</p>
+                                </div>
+                            </div>
+
+                            <h4 class="text-xl font-bold mb-4">Spelcontributies:</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li>• <strong>Slots:</strong> 100% contributie</li>
+                                <li>• <strong>Tafelspellen:</strong> 10% contributie</li>
+                                <li>• <strong>Live Casino:</strong> 5% contributie</li>
+                                <li>• <strong>Video Poker:</strong> 10% contributie</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Inzetvereisten Overzicht</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full border border-gray-700 bg-gray-900/50 rounded-lg">
+                                <thead class="bg-gray-800">
+                                    <tr>
+                                        <th class="px-4 py-3 text-left">Bonus Type</th>
+                                        <th class="px-4 py-3 text-left">Inzetvereisten</th>
+                                        <th class="px-4 py-3 text-left">Tijd Limiet</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-700">
+                                    <tr>
+                                        <td class="px-4 py-3">Welkomstbonus</td>
+                                        <td class="px-4 py-3"><span class="text-yellow-400">35x bonus</span></td>
+                                        <td class="px-4 py-3">30 dagen</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3">Free Spins</td>
+                                        <td class="px-4 py-3"><span class="text-yellow-400">25x winsten</span></td>
+                                        <td class="px-4 py-3">7 dagen</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3">Reload Bonus</td>
+                                        <td class="px-4 py-3"><span class="text-yellow-400">30x bonus</span></td>
+                                        <td class="px-4 py-3">21 dagen</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3">Cashback</td>
+                                        <td class="px-4 py-3"><span class="text-green-400">Geen</span></td>
+                                        <td class="px-4 py-3">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3">Stortingen</td>
+                                        <td class="px-4 py-3"><span class="text-rich-cta">1x bedrag</span></td>
+                                        <td class="px-4 py-3">Geen limiet</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="mt-6 bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
+                            <h4 class="font-bold mb-3 text-yellow-400">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                Belangrijke Regels:
+                            </h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li>• Maximale inzet tijdens bonus: €5 per spin</li>
+                                <li>• Sommige spellen zijn uitgesloten</li>
+                                <li>• Inzetvereisten vervallen na tijdslimiet</li>
+                                <li>• Voortgang is zichtbaar in je account</li>
+                                <li>• Opname annuleert actieve bonussen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KYC Verification -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">KYC Verificatie</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Wat is KYC?</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <p class="text-lg leading-relaxed mb-6">
+                                KYC (Know Your Customer) is een wettelijk vereist verificatieproces waarbij Rich Gringo Casino 
+                                je identiteit controleert. Dit proces is verplicht voor alle online casino's en dient ter 
+                                bescherming tegen fraude, witwassen en minderjarig gokken.
+                            </p>
+
+                            <h4 class="text-xl font-bold mb-4">Waarom KYC Verificatie?</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li>• <strong>Wettelijke verplichting</strong> - Vereist door gokwetgeving</li>
+                                <li>• <strong>Fraudepreventie</strong> - Beschermt tegen identiteitsdiefstal</li>
+                                <li>• <strong>Anti-witwassen</strong> - Voorkomt illegale geldstromen</li>
+                                <li>• <strong>Leeftijdscontrole</strong> - Garandeert 18+ spelers</li>
+                                <li>• <strong>Account beveiliging</strong> - Beschermt je geld</li>
+                            </ul>
+
+                            <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-green-400">
+                                    <i class="fas fa-shield-alt mr-2"></i>
+                                    Je Privacy is Veilig:
+                                </h4>
+                                <p class="text-gray-300 text-sm">
+                                    Alle documenten worden veilig opgeslagen met 256-bit encryptie en worden 
+                                    alleen gebruikt voor verificatiedoeleinden. Rich Gringo Casino deelt 
+                                    nooit je persoonlijke gegevens met derden.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Verificatieproces</h3>
+                        <div class="space-y-6">
+                            <div class="verification-step">
+                                <div class="flex items-start">
+                                    <div class="step-number">1</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Identiteitsbewijs</h4>
+                                        <p class="text-gray-300 mb-2">Upload een duidelijke foto van:</p>
+                                        <ul class="text-sm text-gray-400 space-y-1">
+                                            <li>• Nederlandse ID-kaart (voor- en achterkant)</li>
+                                            <li>• Europees paspoort (fotopagina)</li>
+                                            <li>• Rijbewijs (voor- en achterkant)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verification-step">
+                                <div class="flex items-start">
+                                    <div class="step-number">2</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Adresbewijs</h4>
+                                        <p class="text-gray-300 mb-2">Document niet ouder dan 3 maanden:</p>
+                                        <ul class="text-sm text-gray-400 space-y-1">
+                                            <li>• Bankafschrift</li>
+                                            <li>• Nutsrekening (gas/water/licht)</li>
+                                            <li>• Gemeentelijke belastingaanslag</li>
+                                            <li>• Officiële overheidsbrief</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verification-step">
+                                <div class="flex items-start">
+                                    <div class="step-number">3</div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold text-lg mb-2">Betaalmethode</h4>
+                                        <p class="text-gray-300 mb-2">Bewijs van eigendom:</p>
+                                        <ul class="text-sm text-gray-400 space-y-1">
+                                            <li>• Screenshot van online banking</li>
+                                            <li>• Foto van creditcard (eerste 6 en laatste 4 cijfers zichtbaar)</li>
+                                            <li>• E-wallet screenshot</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 bg-blue-500/10 border border-blue-500/30 rounded-lg p-6">
+                            <h4 class="font-bold mb-3 text-blue-400">
+                                <i class="fas fa-clock mr-2"></i>
+                                Verwerkingstijd:
+                            </h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li>• <strong>Standaard verificatie:</strong> 1-3 werkdagen</li>
+                                <li>• <strong>Aanvullende controles:</strong> Tot 7 dagen</li>
+                                <li>• <strong>Status updates:</strong> Via e-mail</li>
+                                <li>• <strong>Hulp nodig?</strong> Contact klantenservice</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anti-Money Laundering -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Anti-Witwasbeleid</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">Waarom Anti-Witwasregels?</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <p class="text-lg leading-relaxed mb-6">
+                                Rich Gringo Casino houdt zich strikt aan internationale anti-witwasregels (AML - Anti-Money Laundering). 
+                                Deze regels zijn ontworpen om te voorkomen dat criminelen illegaal geld "wit wassen" via online casino's.
+                            </p>
+
+                            <h4 class="text-xl font-bold mb-4">Belangrijkste Regels:</h4>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>1x Playthrough Vereist:</strong> Alle stortingen moeten minimaal 1x worden ingezet voordat opname mogelijk is
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>Zelfde Betaalmethode:</strong> Opnames moeten naar dezelfde methode als de storting
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>Identiteitsverificatie:</strong> Volledige KYC verificatie is verplicht
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>Transactiemonitoring:</strong> Alle transacties worden automatisch gecontroleerd
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-rich-cta">1x Playthrough Uitleg</h3>
+                        <div class="space-y-6">
+                            <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-red-400">
+                                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                                    Verplichte 1x Playthrough:
+                                </h4>
+                                <p class="text-gray-300 mb-4">
+                                    Elke storting moet minimaal 1x worden ingezet voordat je het geld kunt opnemen. 
+                                    Dit geldt voor alle stortingen, ook zonder bonus.
+                                </p>
+                                
+                                <div class="bg-gray-800/50 rounded-lg p-4">
+                                    <h5 class="font-semibold mb-2">Voorbeeld:</h5>
+                                    <ul class="text-sm space-y-1">
+                                        <li>• Je stort €100</li>
+                                        <li>• Je moet minimaal €100 inzetten</li>
+                                        <li>• Daarna kun je je saldo opnemen</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-yellow-400">
+                                    <i class="fas fa-search mr-2"></i>
+                                    Verdachte Activiteiten:
+                                </h4>
+                                <p class="text-gray-300 mb-3">
+                                    De volgende activiteiten kunnen leiden tot aanvullend onderzoek:
+                                </p>
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li>• Grote stortingen zonder spelen</li>
+                                    <li>• Frequente stortingen en directe opnames</li>
+                                    <li>• Gebruik van meerdere betaalmethoden</li>
+                                    <li>• Ongewone transactiepatronen</li>
+                                    <li>• Stortingen van derden</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-6">
+                                <h4 class="font-bold mb-3 text-blue-400">
+                                    <i class="fas fa-info-circle mr-2"></i>
+                                    Gevolgen van Overtreding:
+                                </h4>
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li>• Account kan worden bevroren</li>
+                                    <li>• Aanvullende verificatie vereist</li>
+                                    <li>• Opnames kunnen worden uitgesteld</li>
+                                    <li>• In extreme gevallen: account sluiting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment FAQ -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="section-title text-center mb-16">Veelgestelde Vragen</h2>
+                
+                <div class="space-y-6">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 class="text-lg font-semibold">Waarom duurt mijn opname zo lang?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Opnametijden variëren per methode. E-wallets zijn het snelst (6-24 uur), bankoverschrijvingen duren 1-3 dagen. Als je account niet geverifieerd is of je hebt actieve bonussen, kan dit de opname vertragen. Controleer je KYC status en bonusvoortgang in je account.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 class="text-lg font-semibold">Kan ik opnemen naar een andere betaalmethode?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nee, vanwege anti-witwasregels moet je opnemen naar dezelfde betaalmethode als je storting. Als dit niet mogelijk is (bijvoorbeeld bij Paysafecard), neem dan contact op met klantenservice voor alternatieve opties zoals bankoverschrijving.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 class="text-lg font-semibold">Wat is de 1x playthrough regel?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Alle stortingen moeten minimaal 1x worden ingezet voordat opname mogelijk is. Dit is een anti-witwasregel. Als je €100 stort, moet je minimaal €100 inzetten (ongeacht winst of verlies) voordat je kunt opnemen. Deze regel geldt ook voor stortingen zonder bonus.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 class="text-lg font-semibold">Welke documenten heb ik nodig voor KYC?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Voor KYC verificatie heb je nodig: (1) Geldig identiteitsbewijs (ID/paspoort/rijbewijs), (2) Adresbewijs niet ouder dan 3 maanden (bankafschrift/nutsrekening), (3) Bewijs van betaalmethode (screenshot banking/creditcard foto). Upload duidelijke, leesbare foto's via je account.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 class="text-lg font-semibold">Zijn er kosten verbonden aan stortingen en opnames?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>De meeste stortingen zijn gratis, behalve creditcards (2.5% kosten). Opnames zijn meestal gratis, behalve creditcard opnames (2% kosten). Je bank kan eigen kosten rekenen voor internationale transacties. Controleer altijd de kostentabel voordat je een transactie doet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6">Klaar om te Storten?</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Begin met spelen bij Rich Gringo Casino. Veilige stortingen, snelle opnames en 24/7 support!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="redirectToRegister()" class="cta-button-large">
+                        <i class="fas fa-credit-card mr-2"></i>
+                        Stort Nu
+                    </button>
+                    <a href="/login" class="cta-button-secondary">
+                        <i class="fas fa-sign-in-alt mr-2"></i>
+                        Inloggen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="/">
+                        <img src="images/logo.png" class="-ml-8 h-24" alt="Rich gringo logo" />
+                        </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Het ultieme online casino voor Nederlandse Viking krijgers. Speel verantwoord en win groot!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Spellen</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/#games" class="hover:text-white">Slots</a></li>
+                        <li><a href="/#games" class="hover:text-white">Live Casino</a></li>
+                        <li><a href="/#games" class="hover:text-white">Tafelspellen</a></li>
+                        <li><a href="/#games" class="hover:text-white">Jackpots</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/#support" class="hover:text-white">Live Chat</a></li>
+                        <li><a href="/#support" class="hover:text-white">Email</a></li>
+                        <li><a href="/login" class="hover:text-white">Inloggen</a></li>
+                        <li><a href="/payments" class="hover:text-white text-rich-cta">Betalingen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Verantwoord Gokken</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            <a href="#" class="hover:text-white">Speel Verantwoord</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white">Zelfuitsluiting</a></li>
+                        <li><a href="#" class="hover:text-white">Limieten Instellen</a></li>
+                        <li><a href="#" class="hover:text-white">Hulp bij Gokverslaving</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p class="mb-2">
+                    Rich Gringo wordt geëxploiteerd door EOD Code SRL, een naar behoren geregistreerd bedrijf in overeenstemming met de wetten van de Republiek Costa Rica met Corporate Id. Nr. 3-101-910497
+                </p>
+                <p class="text-yellow-400 font-semibold">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    Gokken kan verslavend zijn. Speel verantwoord. 18+
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

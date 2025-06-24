@@ -96,14 +96,14 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Add loading animation to images
-  const images = document.querySelectorAll("img")
-  images.forEach((img) => {
-    img.addEventListener("load", function () {
-      this.style.opacity = "0"
-    })
-    img.style.opacity = "1"
-    img.style.transition = "opacity 0.3s ease"
-  })
+  // const images = document.querySelectorAll("img")
+  // images.forEach((img) => {
+  //   img.addEventListener("load", function () {
+  //     this.style.opacity = "0"
+  //   })
+  //   img.style.opacity = "1"
+  //   img.style.transition = "opacity 0.3s ease"
+  // })
 
   // Navbar background on scroll
   const navbar = document.querySelector("nav")

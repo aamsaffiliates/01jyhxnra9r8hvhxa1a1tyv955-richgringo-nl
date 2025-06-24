@@ -76,18 +76,18 @@ body {
 }
 
 /* Navigation */
-.nav-link {
+.nav-link, .real-nav-link {
   position: relative;
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
 }
 
-.nav-link:hover {
+.nav-link:hover, .real-nav-link:hover {
   color: #c62047;
   transform: translateY(-2px);
 }
 
-.nav-link::after {
+.nav-link::after, .real-nav-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -99,7 +99,7 @@ body {
   transform: translateX(-50%);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after, .real-nav-link:hover::after {
   width: 100%;
 }
 
